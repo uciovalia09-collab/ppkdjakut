@@ -1,3 +1,7 @@
+<meta-data
+ android:name="com.google.android.geo.API_KEY"
+ android:value="${GOOGLE_MAPS_API_KEY}"/>
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
@@ -27,6 +31,9 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] =
+        localProperties.getProperty("GOOGLE_MAPS_API_KEY", "")
     }
 
     buildTypes {

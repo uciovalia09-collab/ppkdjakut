@@ -116,6 +116,7 @@ class _CryptoTile extends StatelessWidget {
         children: [
           Text('\$${crypto.currentPrice.toStringAsFixed(2)}'),
           Text(
+            //
             '${change >= 0 ? '+' : ''}${change.toStringAsFixed(2)}%',
             style: TextStyle(color: changeColor),
           ),
