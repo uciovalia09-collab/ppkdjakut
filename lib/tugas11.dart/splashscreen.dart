@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ppkdjakut/navigation.dart';
+import 'package:ppkdjakut/preference_handier.dart';
 import 'package:ppkdjakut/preference_handler.dart';
 
 // Ubah jalur import ini agar sesuai dengan letak file di folder lib/
